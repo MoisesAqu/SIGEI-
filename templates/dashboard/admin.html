@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIGEI - Administrador</title>
+</head>
+
+<body>
+
+    <h1>Dashboard Administrador</h1>
+
+    <p>Bienvenido: {{ request.user.username }}</p>
+
+    <hr>
+
+    <h2>Módulos</h2>
+
+    <ul>
+
+        <li>Categorías</li>
+
+        <li>Productos</li>
+
+        <li>Compras</li>
+
+        <li>Ventas</li>
+
+        <li>Inventario</li>
+
+        <li>Usuarios</li>
+
+        <li>Reportes</li>
+
+        <li>Auditoría</li>
+
+    </ul>
+
+    <hr>
+
+    <a href="{% url 'logout' %}">
+        Cerrar sesión
+    </a>
+
+</body>
+</html>

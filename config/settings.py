@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'apps.usuarios.apps.UsuariosConfig',
     'apps.dashboard.apps.DashboardConfig',
+    'apps.categorias.apps.CategoriasConfig',
     
 ]
 
