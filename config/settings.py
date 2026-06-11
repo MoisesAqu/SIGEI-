@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.usuarios.apps.UsuariosConfig',
     'apps.dashboard.apps.DashboardConfig',
     'apps.categorias.apps.CategoriasConfig',
+    'apps.productos.apps.ProductosConfig',
     
 ]
 

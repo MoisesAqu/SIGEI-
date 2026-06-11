@@ -1,44 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>SIGEI - Administrador</title>
-</head>
+{% extends 'base/base_admin.html' %}
 
-<body>
+{% block content %}
+<h1>Dashboard</h1>
+<p class="text-muted">Panorama general - Innova Grupo Ferretero</p>
 
-    <h1>Dashboard Administrador</h1>
+<div class="row mt-4">
+    <div class="col-md-3">
+        <div class="card-sigei p-4">
+            <p>Ventas del Mes</p>
+            <h2>S/ 67,450</h2>
+        </div>
+    </div>
 
-    <p>Bienvenido: {{ request.user.username }}</p>
+    <div class="col-md-3">
+        <div class="card-sigei p-4">
+            <p>Total Productos</p>
+            <h2>1,247</h2>
+        </div>
+    </div>
 
-    <hr>
+    <div class="col-md-3">
+        <div class="card-sigei p-4">
+            <p>Órdenes Pendientes</p>
+            <h2>23</h2>
+        </div>
+    </div>
 
-    <h2>Módulos</h2>
-
-    <ul>
-
-        <li>Categorías</li>
-
-        <li>Productos</li>
-
-        <li>Compras</li>
-
-        <li>Ventas</li>
-
-        <li>Inventario</li>
-
-        <li>Usuarios</li>
-
-        <li>Reportes</li>
-
-        <li>Auditoría</li>
-
-    </ul>
-
-    <hr>
-
-    <a href="{% url 'logout' %}">
-        Cerrar sesión
-    </a>
-
-</body>
-</html>
+    <div class="col-md-3">
+        <div class="card-sigei p-4">
+            <p>Alertas de Stock</p>
+            <h2>4</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}

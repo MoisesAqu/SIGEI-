@@ -7,4 +7,9 @@ urlpatterns = [
     path('', include('apps.usuarios.urls')),
 
     path('', include('apps.dashboard.urls')),
+
+    path('categorias/', include('apps.categorias.urls')),
+
+    path('', include('apps.productos.urls')),
 ]
+
